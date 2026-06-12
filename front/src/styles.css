@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: pixels;
+  src: url("/fonts/RubikPixels-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: googlesans;
+  src: url("/fonts/GoogleSans-VariableFont_GRAD,opsz,wght.woff2")
+    format("truetype");
+}
+
+@theme {
+  --font-pixel: pixels;
+  --font-googlesans: googlesans;
+}
+
+.katex-display {
+  margin: 0.5rem 0 !important;
+}
