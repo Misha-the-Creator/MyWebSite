@@ -15,10 +15,10 @@ function DataFetcher(props: any) {
     queryFn: async () => {
       console.log("FETCH!");
       const response_article = await fetch(
-        `http://localhost:8080/ml/get-article/${route}`,
+        `http://localhost:8000/ml/get-article/${route}`,
       );
       const response_image = await fetch(
-        `http://localhost:8080/ml/get-article-image/${route}`,
+        `http://localhost:8000/ml/get-article-image/${route}`,
       );
       const articleObject = {
         article: await response_article.json(),
