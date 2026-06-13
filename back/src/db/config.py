@@ -15,11 +15,12 @@ class DatabaseConfig(BaseModel):
     password: str
     port: int
     db_name: str 
+    host: str
     echo: bool = False 
     pool_size: int = 25
 
     def create_url(self):
-        return f'postgresql+{self.engine}://{self.user}:{self.password}@localhost:{self.port}/{self.db_name}'
+        return f'postgresql+{self.engine}://{self.user}:{self.password}@{self.host}:{self.port}/{self.db_name}'
 
 class Setting(BaseSettings):
     model_config = SettingsConfigDict(env_file='.env', 
