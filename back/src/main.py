@@ -23,7 +23,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://147.45.246.64:3000",
-        "http://mzuevv.ru:3000"
+        "https://mzuevv.ru",
+        "https://www.mzuevv.ru",
     ])
 
 def main():
