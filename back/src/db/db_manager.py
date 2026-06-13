@@ -47,7 +47,7 @@ class DBManager:
             return result.scalar_one_or_none()
         
         except Exception as e:
-            logger.error(f'Ошибка при добавлении в articles и images: {e}')
+            logger.error(f'Ошибка при получении текста статьи: {e}')
             return False
         
     async def post_image_article(self, image: ArticleImageBase):
