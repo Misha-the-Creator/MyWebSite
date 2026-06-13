@@ -14,11 +14,9 @@ function DataFetcher(props: any) {
     queryKey: ["repoData"],
     queryFn: async () => {
       console.log("FETCH!");
-      const response_article = await fetch(
-        `http://mzuevv:8000/ml/get-article/${route}`,
-      );
+      const response_article = await fetch(`/api/ml/get-article/${route}`);
       const response_image = await fetch(
-        `http://mzuevv:8000/ml/get-article-image/${route}`,
+        `https://mzuevv:8000/ml/get-article-image/${route}`,
       );
       const articleObject = {
         article: await response_article.json(),
