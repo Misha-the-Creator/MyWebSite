@@ -18,6 +18,4 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /front/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 3000
-
 CMD ["nginx", "-g", "daemon off;"]
