@@ -15,9 +15,7 @@ function DataFetcher(props: any) {
     queryFn: async () => {
       console.log("FETCH!");
       const response_article = await fetch(`/api/ml/get-article/${route}`);
-      const response_image = await fetch(
-        `https://mzuevv:8000/ml/get-article-image/${route}`,
-      );
+      const response_image = await fetch(`/api/ml/get-article-image/${route}`);
       const articleObject = {
         article: await response_article.json(),
         images: await response_image.json(),
