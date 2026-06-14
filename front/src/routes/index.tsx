@@ -4,8 +4,8 @@ export const Route = createFileRoute("/")({ component: Home });
 
 function Home() {
   const mapFont = ["i", "v"];
-  const headerStr1 = "M{i}sha";
-  const headerStr2 = "Zue{v}";
+  const headerStr1 = "Mikhail Zuev";
+  // const headerStr2 = "Zue{v}";
 
   return (
     <div className="font-googlesans text-[20vw] lg:text-[10vw] content-end justify ml-10 -mt-10 -z-2">
