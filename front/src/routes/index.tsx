@@ -1,4 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { IconOne } from "../../public/me_svg/iconc_components/Icon1";
+import { IconTwo } from "../../public/me_svg/iconc_components/Icon2";
+import { IconThree } from "../../public/me_svg/iconc_components/Icon3";
+import { IconFour } from "../../public/me_svg/iconc_components/Icon4";
+import { useState, useEffect } from "react";
 
 export const Route = createFileRoute("/")({ component: Home });
 
